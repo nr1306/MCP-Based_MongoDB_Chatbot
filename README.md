@@ -46,4 +46,33 @@ Ensure the following are installed:
 
 2. Start MongoDB
 Launch MongoDB locally (default port 27017):
-mongod
+``` mongod ```
+Tip: Use a MongoDB GUI like MongoDB Compass to visualize and inspect the data.
+
+3. Set Up and Run the MCP MongoDB Server
+```
+cd mcp-mongo-project
+npm install
+node src/index.js
+```
+This starts the MCP-compatible server exposing MongoDB operations.
+
+4. Set Up and Run the Client (Gemini AI Agent)
+In a new terminal tab:
+```
+cd client-side
+npm install
+node index.js
+```
+You can now interact with the AI agent via terminal, which queries the MCP MongoDB server in real-time.
+
+## CONTRIBUTING
+Contributions are welcome!
+
+- Fork the repository
+- Create a new branch: git checkout -b feature-name
+- Commit your changes: git commit -m "Add feature"
+- Push to the branch: git push origin feature-name
+- Open a Pull Request
+
+We appreciate feedback, bug reports, and feature enhancements.
